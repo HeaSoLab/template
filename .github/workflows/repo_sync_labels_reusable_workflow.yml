@@ -1,4 +1,4 @@
-name: Sync Repo Labels
+name: Sync Repo Labels Reusable Workflow
 on:
   workflow_call:
     inputs:

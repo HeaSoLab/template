@@ -12,6 +12,6 @@ jobs:
   repo_setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: HeaSoLab/template/.github/template/repo_sync_labels.yml@main
+      - uses: HeaSoLab/template/.github/workflows/repo_sync_labels_resusable_workflow.yml@main
         with:
           repo-name: 'HeaSoLab/template'
