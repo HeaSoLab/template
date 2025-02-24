@@ -10,3 +10,4 @@ jobs:
     uses: HeaSoLab/template/.github/workflows/repo_sync_labels_reusable_workflow.yml@main
     with:
       repo-name: 'HeaSoLab/template'
+    secrets: inherit
