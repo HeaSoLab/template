@@ -1,0 +1,20 @@
+name: Sync Repo Labels Reusable Workflow
+on:
+  workflow_call:
+    inputs:
+      repo-name:
+        description: 'Name of the repo'
+        required: true
+        type: string
+
+jobs:
+  repo_setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: micnncim/action-label-syncer@v1
+        with:
+          manifest: .github/labels.yml
+          repository: |
+            ${{ inputs.repo-name }}
+          token: ${{ secrets.ACTIONS }}
