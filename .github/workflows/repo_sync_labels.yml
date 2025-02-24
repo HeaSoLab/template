@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 jobs:
   repo_setup:
-    uses: HeaSoLab/template/.github/workflows/repo_sync_labels_reusable_workflow.yml@main
+    uses: HeaSoLab/template/.github/template/repo_sync_labels_reusable_workflow.yml@main
     with:
       repo-name: 'HeaSoLab/template'
     secrets: inherit
