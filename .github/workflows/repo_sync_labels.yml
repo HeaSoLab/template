@@ -3,15 +3,10 @@ on:
   push:
     branches:
       - main
-    paths:
-      - .github/labels.yml
   # Run manually.
   workflow_dispatch:
-
 jobs:
   repo_setup:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: HeaSoLab/template/.github/workflows/repo_sync_labels_reusable_workflow.yml@main
-        with:
-          repo-name: 'HeaSoLab/template'
+    uses: HeaSoLab/template/.github/workflows/repo_sync_labels_reusable_workflow.yml@main
+    with:
+      repo-name: 'HeaSoLab/template'
