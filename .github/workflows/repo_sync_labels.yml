@@ -2,7 +2,7 @@ name: Sync Repo Labels
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - .github/labels.yml
   # Run manually.
